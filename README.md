@@ -8,6 +8,11 @@ For example, here's how you would get an NSDate for the first day of this quarte
 
     NSDate *myDate = [NSDate firstDayOfCurrentQuarter];
     
+Or, use with NSDate instances to calculate date offsets from any date:
+	
+	NSDate *myDate = ... some domain specific date
+	NSDate *firstQuarter = [myDate firstDayOfCurrentQuarter];
+    
 Originally created for use in an iOS app, which needed to filter dates when generating reports. Hence the name (NSDate+Reporting).
 
 
